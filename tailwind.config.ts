@@ -119,10 +119,14 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-primary': 'var(--gradient-primary)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-nordeste': 'var(--gradient-nordeste)',
+        'gradient-sunset': 'var(--gradient-sunset)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'hover': 'var(--shadow-hover)',
+        'glow': 'var(--shadow-glow)',
       },
     },
   },
