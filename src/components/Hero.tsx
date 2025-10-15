@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="relative inline-block">
               <span
                 className="relative bg-gradient-nordeste bg-clip-text text-transparent"
-                style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)" }}
+                style={{ textShadow: "0 2px 4px rgba(0,0,0,0.5)" }}
               >
                 Rapadura
               </span>
@@ -35,7 +35,7 @@ const Hero = () => {
             <span className="relative inline-block">
               <span
                 className="relative bg-gradient-nordeste bg-clip-text text-transparent"
-                style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)" }}
+                style={{ textShadow: "0 2px 4px rgba(0,0,0,0.5)" }}
               >
                 Academy
               </span>
