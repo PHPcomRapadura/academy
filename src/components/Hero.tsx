@@ -72,7 +72,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-6">
             <Button
               size="lg"
-              className="group relative text-xl px-12 py-8 bg-gradient-nordeste hover:bg-gradient-nordeste/90 text-primary/90 shadow-glow hover:shadow-hover transition-all duration-300 hover:scale-105 font-bold rounded-2xl"
+              className="group relative text-xl px-12 py-8 bg-gradient-nordeste hover:bg-gradient-nordeste/90 text-gray-100 shadow-glow hover:shadow-hover transition-all duration-300 hover:scale-105 font-bold rounded-2xl"
               asChild
             >
               <a
