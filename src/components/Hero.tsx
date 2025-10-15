@@ -70,7 +70,7 @@ const Hero = () => {
               asChild
             >
               <a
-                href="https://github.com/phpcomrapadura/academy"
+                href="https://github.com/phpcomrapadura/rapadura-academy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3"
