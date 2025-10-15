@@ -1,4 +1,4 @@
-import { GitBranch, GitPullRequest, CheckCircle2, Sparkles, BookOpen } from "lucide-react";
+import { GitBranch, GitPullRequest, CheckCircle2, Sparkles, BookOpen, RefreshCw } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const steps = [
@@ -142,7 +142,7 @@ const HowItWorks = () => {
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-glow">
-                  <BookOpen className="w-8 h-8 text-primary-foreground" />
+                  <RefreshCw className="w-8 h-8 text-primary-foreground" />
                 </div>
               </div>
               <div className="space-y-3">
