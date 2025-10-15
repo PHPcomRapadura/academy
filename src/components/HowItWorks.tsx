@@ -3,28 +3,24 @@ import { GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react"
 const steps = [
   {
     icon: GitBranch,
-    number: "01",
     title: "Escolha seu Workshop",
     description: "Visite o repositório no GitHub e confira a lista de workshops disponíveis no README da branch main. Cada workshop tem sua própria branch com todos os detalhes.",
     color: "from-primary to-accent"
   },
   {
     icon: GitBranch,
-    number: "02",
     title: "Encontre a Branch",
     description: "Navegue até a branch específica do workshop que te interessa. Lá você encontrará todas as informações: data, horário, instrutor e conteúdo programático.",
     color: "from-accent to-secondary"
   },
   {
     icon: GitPullRequest,
-    number: "03",
     title: "Faça seu Pull Request",
     description: "Adicione seu nome à lista de participantes e abra um PR na branch do workshop. Essa é sua inscrição! Simples assim, do jeito que a gente ama: código primeiro! 💻",
     color: "from-secondary to-primary"
   },
   {
     icon: CheckCircle2,
-    number: "04",
     title: "Confirmação",
     description: "Após a revisão do seu PR, você receberá a confirmação da inscrição e todas as informações para participar do workshop online. Prepare-se para aprender!",
     color: "from-primary to-accent"
@@ -71,14 +67,9 @@ const HowItWorks = () => {
                 {/* Gradient border effect */}
                 <div className={`absolute -inset-1 bg-gradient-to-br ${step.color} rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500`}></div>
                 
-                <div className="relative h-full bg-gradient-card backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover">
-                  {/* Number badge */}
-                  <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl shadow-glow flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-2xl font-black text-primary-foreground">{step.number}</span>
-                  </div>
-
+                <div className="relative h-full bg-card backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover">
                   {/* Icon */}
-                  <div className="mb-6 mt-4">
+                  <div className="mb-6">
                     <div className={`inline-flex p-4 bg-gradient-to-br ${step.color} rounded-2xl shadow-lg`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>

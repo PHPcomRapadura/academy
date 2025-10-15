@@ -86,7 +86,7 @@ const WorkshopExamples = () => {
                 {/* Gradient glow effect */}
                 <div className={`absolute -inset-1 bg-gradient-to-br ${category.color} rounded-3xl blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
                 
-                <div className="relative h-full bg-gradient-card backdrop-blur-sm p-8 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover group-hover:scale-105">
+                <div className="relative h-full bg-card backdrop-blur-sm p-8 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover group-hover:scale-105">
                   {/* Icon with gradient background */}
                   <div className="mb-6">
                     <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${category.color} shadow-lg group-hover:shadow-glow transition-all duration-300 group-hover:scale-110`}>
