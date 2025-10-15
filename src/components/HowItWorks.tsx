@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const steps = [
   {
-    icon: GitBranch,
+    icon: BookOpen,
     title: "Escolha seu Workshop",
     description:
       "Visite o repositório no GitHub e confira a lista de workshops disponíveis no README da branch main. Cada workshop tem sua própria branch com todos os detalhes.",
