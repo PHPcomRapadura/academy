@@ -24,24 +24,22 @@ const Hero = () => {
           {/* Main heading */}
           <h1 className="text-7xl md:text-9xl font-black leading-tight tracking-tight">
             <span className="relative inline-block">
-              <span className="absolute inset-0 bg-gradient-nordeste blur-2xl opacity-50"></span>
-              <span className="relative bg-gradient-nordeste bg-clip-text text-transparent drop-shadow-2xl">
+              <span className="relative bg-gradient-nordeste bg-clip-text text-transparent" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
                 Rapadura
               </span>
             </span>
             <br />
             <span className="relative inline-block mt-4">
-              <span className="absolute inset-0 bg-gradient-accent blur-xl opacity-40"></span>
-              <span className="relative text-foreground/90 drop-shadow-lg">
+              <span className="relative text-foreground drop-shadow-lg">
                 Academy
               </span>
             </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-2xl md:text-4xl font-bold text-foreground/80 max-w-4xl mx-auto drop-shadow-lg leading-relaxed">
+          <p className="text-2xl md:text-4xl font-bold text-foreground max-w-4xl mx-auto drop-shadow-lg leading-relaxed">
             Workshops online gratuitos<br className="hidden md:block" /> 
-            <span className="text-primary"> para a comunidade</span> 🌵
+            <span className="bg-gradient-accent bg-clip-text text-transparent font-black drop-shadow-xl"> para a comunidade</span> 🌵
           </p>
 
           {/* Description card */}
