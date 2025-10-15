@@ -92,7 +92,7 @@ const HowItWorks = () => {
         {/* Highlight box */}
         <div className="max-w-5xl mx-auto relative group animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <div className="absolute -inset-1 bg-gradient-accent rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-          <div className="relative bg-white backdrop-blur-xl p-10 md:p-14 rounded-3xl border-2 border-primary/40 shadow-hover">
+          <div className="relative bg-card backdrop-blur-xl p-10 md:p-14 rounded-3xl border-2 border-primary/40 shadow-hover">
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-glow">
