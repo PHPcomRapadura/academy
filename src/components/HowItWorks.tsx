@@ -1,8 +1,8 @@
-import { GraduationCap, GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react";
+import { GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react";
 
 const steps = [
   {
-    icon: GraduationCap,
+    icon: GitBranch,
     title: "Escolha seu Workshop",
     description:
       "Visite o repositório no GitHub e confira a lista de workshops disponíveis no README da branch main. Cada workshop tem sua própria branch com todos os detalhes.",
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                   className={`absolute -inset-1 bg-gradient-to-br ${step.color} rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500`}
                 ></div>
 
-                <div className="relative h-full bg-white backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover">
+                <div className="relative h-full bg-card backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover">
                   {/* Icon */}
                   <div className="mb-6">
                     <div className={`inline-flex p-4 bg-gradient-to-br ${step.color} rounded-2xl shadow-lg`}>
