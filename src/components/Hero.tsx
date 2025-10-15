@@ -32,8 +32,13 @@ const Hero = () => {
               </span>
             </span>
             <br />
-            <span className="relative inline-block mt-4">
-              <span className="relative  bg-gradient-nordeste text-transparent drop-shadow-lg">Academy</span>
+            <span className="relative inline-block">
+              <span
+                className="relative bg-gradient-nordeste bg-clip-text text-transparent"
+                style={{ textShadow: "0 4px 20px rgba(0,0,0,0.5)" }}
+              >
+                Academy
+              </span>
             </span>
           </h1>
 
