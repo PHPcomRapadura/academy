@@ -1,70 +1,103 @@
 import { Button } from "@/components/ui/button";
-import { Github, BookOpen, Code2, Sparkles, Sun } from "lucide-react";
+import { Github, BookOpen, Code2, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),transparent_50%)]"></div>
-      
-      {/* Floating decorative elements - more vibrant */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+      {/* Decorative pattern background */}
+      <div className="absolute inset-0 opacity-10">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="cactus-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+              {/* Cacto */}
+              <path d="M100 150 Q95 120 95 100 Q95 80 100 60 Q105 80 105 100 Q105 120 100 150 M85 110 Q80 105 80 95 Q80 85 85 80 M115 110 Q120 105 120 95 Q120 85 115 80" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-foreground"/>
+              {/* Flor */}
+              <circle cx="50" cy="50" r="3" fill="currentColor" className="text-accent"/>
+              <circle cx="46" cy="46" r="2" fill="currentColor" className="text-accent"/>
+              <circle cx="54" cy="46" r="2" fill="currentColor" className="text-accent"/>
+              <circle cx="46" cy="54" r="2" fill="currentColor" className="text-accent"/>
+              <circle cx="54" cy="54" r="2" fill="currentColor" className="text-accent"/>
+              {/* Sol */}
+              <circle cx="160" cy="30" r="8" fill="currentColor" className="text-primary"/>
+              <line x1="160" y1="18" x2="160" y2="12" stroke="currentColor" strokeWidth="2" className="text-primary"/>
+              <line x1="172" y1="30" x2="178" y2="30" stroke="currentColor" strokeWidth="2" className="text-primary"/>
+              <line x1="148" y1="30" x2="142" y2="30" stroke="currentColor" strokeWidth="2" className="text-primary"/>
+              <line x1="160" y1="42" x2="160" y2="48" stroke="currentColor" strokeWidth="2" className="text-primary"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#cactus-pattern)" />
+        </svg>
+      </div>
+
+      {/* Floating decorative blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-accent rounded-full blur-3xl opacity-20 animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-primary rounded-full blur-3xl opacity-25 animate-float" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute top-1/2 left-1/3 w-36 h-36 bg-secondary rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: "2s" }}></div>
-        <div className="absolute top-1/3 right-1/4 w-28 h-28 bg-accent rounded-full blur-2xl opacity-15 animate-float" style={{ animationDelay: "1.5s" }}></div>
+        <div className="absolute -top-20 -left-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -bottom-20 -right-20 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
         
-        {/* Sun rays effect */}
-        <Sun className="absolute top-10 right-20 w-24 h-24 text-accent/10 animate-pulse" />
-        <Sparkles className="absolute bottom-32 left-20 w-16 h-16 text-primary/20 animate-float" />
+        {/* Sparkle icons */}
+        <Sparkles className="absolute top-20 right-1/4 w-12 h-12 text-accent/30 animate-pulse" />
+        <Sparkles className="absolute bottom-40 left-1/3 w-8 h-8 text-primary/30 animate-float" style={{ animationDelay: "1.5s" }} />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* Logo/Badge with glow */}
-          <div className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-glow border-2 border-primary/30">
-            <Code2 className="w-5 h-5 text-primary animate-pulse" />
-            <span className="text-sm font-semibold text-foreground">PHP com Rapadura</span>
+        <div className="max-w-6xl mx-auto text-center space-y-10 animate-fade-in">
+          {/* Logo Badge */}
+          <div className="inline-flex items-center gap-3 bg-background/40 backdrop-blur-md px-8 py-4 rounded-full shadow-glow border-2 border-primary/40 hover:border-primary/60 transition-all">
+            <Code2 className="w-6 h-6 text-primary animate-pulse" />
+            <span className="text-base font-bold text-foreground">PHP com Rapadura</span>
           </div>
 
-          {/* Main heading with gradient */}
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight">
-            <span className="bg-gradient-nordeste bg-clip-text text-transparent drop-shadow-lg">
-              Rapadura Academy
+          {/* Main heading */}
+          <h1 className="text-7xl md:text-9xl font-black leading-tight tracking-tight">
+            <span className="relative inline-block">
+              <span className="absolute inset-0 bg-gradient-nordeste blur-2xl opacity-50"></span>
+              <span className="relative bg-gradient-nordeste bg-clip-text text-transparent drop-shadow-2xl">
+                Rapadura
+              </span>
+            </span>
+            <br />
+            <span className="relative inline-block mt-4">
+              <span className="absolute inset-0 bg-gradient-accent blur-xl opacity-40"></span>
+              <span className="relative text-foreground/90 drop-shadow-lg">
+                Academy
+              </span>
             </span>
           </h1>
 
-          {/* Subheading with better contrast */}
-          <p className="text-xl md:text-3xl font-semibold text-background/90 max-w-3xl mx-auto drop-shadow-md">
-            Workshops online gratuitos para a comunidade. Aprenda, contribua e cresça junto com a gente! 🌵
+          {/* Subheading */}
+          <p className="text-2xl md:text-4xl font-bold text-foreground/80 max-w-4xl mx-auto drop-shadow-lg leading-relaxed">
+            Workshops online gratuitos<br className="hidden md:block" /> 
+            <span className="text-primary"> para a comunidade</span> 🌵
           </p>
 
-          {/* Description card with gradient border */}
-          <div className="relative max-w-3xl mx-auto">
-            <div className="absolute inset-0 bg-gradient-nordeste rounded-3xl blur opacity-30"></div>
-            <div className="relative bg-background/95 backdrop-blur-sm p-8 md:p-10 rounded-3xl shadow-glow border-2 border-primary/20">
-              <p className="text-lg text-foreground leading-relaxed">
-                O Rapadura Academy é uma iniciativa da comunidade <strong className="text-primary">PHP com Rapadura</strong> para compartilhar conhecimento através de workshops online. 
-                A inscrição é feita de um jeito único: através de um <strong className="text-accent">Pull Request no GitHub</strong>! 🚀
+          {/* Description card */}
+          <div className="relative max-w-4xl mx-auto group">
+            <div className="absolute -inset-1 bg-gradient-accent rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+            <div className="relative bg-card/60 backdrop-blur-xl p-10 md:p-14 rounded-3xl shadow-hover border-2 border-primary/30 group-hover:border-primary/50 transition-all">
+              <p className="text-xl md:text-2xl text-card-foreground leading-relaxed font-medium">
+                Aprenda, contribua e cresça junto com a gente! O Rapadura Academy é uma iniciativa da <strong className="text-primary font-bold">PHP com Rapadura</strong> para compartilhar conhecimento através de workshops online. 
+                <br /><br />
+                A inscrição é feita de um jeito único: através de um <strong className="text-accent font-bold">Pull Request no GitHub</strong>! 🚀
               </p>
             </div>
           </div>
 
-          {/* CTA Buttons with enhanced styling */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-6">
             <Button 
               size="lg" 
-              className="group relative text-lg px-10 py-7 shadow-glow hover:shadow-hover transition-all duration-300 hover:scale-110 overflow-hidden"
+              className="group relative text-xl px-12 py-8 bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow hover:shadow-hover transition-all duration-300 hover:scale-105 font-bold rounded-2xl"
               asChild
             >
               <a 
                 href="https://github.com/phpcomrapadura/academy" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 relative z-10"
+                className="flex items-center gap-3"
               >
-                <Github className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                <Github className="w-7 h-7 group-hover:rotate-12 transition-transform" />
                 Ver Workshops Disponíveis
               </a>
             </Button>
@@ -72,7 +105,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="text-lg px-10 py-7 border-2 border-background/30 bg-background/20 backdrop-blur-sm text-background hover:bg-background hover:text-foreground transition-all duration-300 hover:scale-105 shadow-soft"
+              className="text-xl px-12 py-8 border-3 border-foreground/40 bg-background/30 backdrop-blur-md text-foreground hover:bg-background/60 hover:border-foreground/60 transition-all duration-300 hover:scale-105 shadow-soft font-bold rounded-2xl"
               asChild
             >
               <a 
@@ -81,7 +114,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3"
               >
-                <BookOpen className="w-6 h-6" />
+                <BookOpen className="w-7 h-7" />
                 Sobre a Comunidade
               </a>
             </Button>

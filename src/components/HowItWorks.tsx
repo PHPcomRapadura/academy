@@ -1,110 +1,119 @@
-import { GitBranch, GitPullRequest, CheckCircle, BookOpen, Sparkles } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react";
 
 const steps = [
   {
-    icon: BookOpen,
-    title: "1. Escolha um Workshop",
-    description: "Acesse o repositório github.com/phpcomrapadura/academy e confira os workshops disponíveis listados no README da branch main.",
-    gradient: "from-blue-500 to-cyan-600",
+    icon: GitBranch,
+    number: "01",
+    title: "Escolha seu Workshop",
+    description: "Visite o repositório no GitHub e confira a lista de workshops disponíveis no README da branch main. Cada workshop tem sua própria branch com todos os detalhes.",
+    color: "from-primary to-accent"
   },
   {
     icon: GitBranch,
-    title: "2. Encontre a Branch",
-    description: "Cada workshop tem sua própria branch. Localize a branch correspondente ao workshop que você deseja participar.",
-    gradient: "from-purple-500 to-indigo-600",
+    number: "02",
+    title: "Encontre a Branch",
+    description: "Navegue até a branch específica do workshop que te interessa. Lá você encontrará todas as informações: data, horário, instrutor e conteúdo programático.",
+    color: "from-accent to-secondary"
   },
   {
     icon: GitPullRequest,
-    title: "3. Faça seu Pull Request",
-    description: "Crie um Pull Request na branch do workshop escolhido. Esse é o seu registro de inscrição!",
-    gradient: "from-orange-500 to-red-600",
+    number: "03",
+    title: "Faça seu Pull Request",
+    description: "Adicione seu nome à lista de participantes e abra um PR na branch do workshop. Essa é sua inscrição! Simples assim, do jeito que a gente ama: código primeiro! 💻",
+    color: "from-secondary to-primary"
   },
   {
-    icon: CheckCircle,
-    title: "4. Confirmação",
-    description: "Assim que seu PR for aceito, você estará oficialmente inscrito. Aguarde as informações sobre data e horário.",
-    gradient: "from-green-500 to-emerald-600",
-  },
+    icon: CheckCircle2,
+    number: "04",
+    title: "Confirmação",
+    description: "Após a revisão do seu PR, você receberá a confirmação da inscrição e todas as informações para participar do workshop online. Prepare-se para aprender!",
+    color: "from-primary to-accent"
+  }
 ];
 
 const HowItWorks = () => {
   return (
-    <section className="relative py-24 overflow-hidden">
-      {/* Vibrant gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/10"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,200,100,0.1),transparent_70%)]"></div>
-      
+    <section className="relative py-24 md:py-32 overflow-hidden bg-background">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+      </div>
+
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-primary px-6 py-2 rounded-full mb-6 shadow-glow">
-            <Sparkles className="w-5 h-5 text-white animate-pulse" />
-            <span className="text-sm font-bold text-white">Processo Único</span>
+        {/* Section Header */}
+        <div className="text-center mb-20 space-y-6 animate-fade-in">
+          <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full">
+            <Sparkles className="w-5 h-5 text-primary" />
+            <span className="text-sm font-bold text-primary uppercase tracking-wider">Como Funciona</span>
           </div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-nordeste bg-clip-text text-transparent">
-              Como Funciona?
+          <h2 className="text-5xl md:text-7xl font-black text-foreground">
+            Inscrição via
+            <span className="block mt-2 bg-gradient-nordeste bg-clip-text text-transparent">
+              Pull Request
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Inscrição através do GitHub - simples, rápido e colaborativo! 🚀
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-medium">
+            Um processo único que combina aprendizado com prática em Git e GitHub
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-slide-in">
+        {/* Steps Grid */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-7xl mx-auto">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <Card 
+              <div 
                 key={index} 
-                className="group relative overflow-hidden border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow hover:scale-105 bg-card/80 backdrop-blur-sm"
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="group relative animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Gradient accent on top */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${step.gradient}`}></div>
+                {/* Gradient border effect */}
+                <div className={`absolute -inset-1 bg-gradient-to-br ${step.color} rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500`}></div>
                 
-                <CardContent className="p-8">
-                  <div className="flex flex-col items-center text-center space-y-6">
-                    <div className={`relative w-20 h-20 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-soft group-hover:shadow-glow transition-all duration-300 group-hover:scale-110`}>
-                      <Icon className="w-10 h-10 text-white" />
-                      
-                      {/* Connection line for desktop */}
-                      {index < steps.length - 1 && (
-                        <div className="hidden lg:block absolute left-full top-1/2 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent"></div>
-                      )}
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      {step.title}
-                    </h3>
-                    
-                    <p className="text-muted-foreground leading-relaxed text-base">
-                      {step.description}
-                    </p>
+                <div className="relative h-full bg-gradient-card backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-border/50 group-hover:border-primary/50 transition-all duration-300 shadow-soft group-hover:shadow-hover">
+                  {/* Number badge */}
+                  <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl shadow-glow flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl font-black text-primary-foreground">{step.number}</span>
                   </div>
-                </CardContent>
-              </Card>
+
+                  {/* Icon */}
+                  <div className="mb-6 mt-4">
+                    <div className={`inline-flex p-4 bg-gradient-to-br ${step.color} rounded-2xl shadow-lg`}>
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-2xl md:text-3xl font-bold text-card-foreground mb-4 group-hover:text-primary transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
             );
           })}
         </div>
 
-        <div className="mt-20 relative animate-fade-in">
-          <div className="absolute inset-0 bg-gradient-nordeste rounded-3xl blur-xl opacity-20"></div>
-          <div className="relative bg-card/90 backdrop-blur-sm p-8 md:p-10 rounded-3xl border-2 border-primary/30 shadow-glow">
-            <div className="flex flex-col md:flex-row items-center gap-6">
+        {/* Highlight box */}
+        <div className="max-w-5xl mx-auto relative group animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="absolute -inset-1 bg-gradient-accent rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+          <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-xl p-10 md:p-14 rounded-3xl border-2 border-primary/40 shadow-hover">
+            <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-hero flex items-center justify-center shadow-glow">
-                  <GitBranch className="w-10 h-10 text-white" />
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-glow">
+                  <Sparkles className="w-8 h-8 text-primary-foreground" />
                 </div>
               </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-                  Workshops Sempre Atualizados
+              <div className="space-y-3">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Workshops sempre atualizados!
                 </h3>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  A lista de workshops disponíveis está sempre no <strong className="text-primary">README da branch main</strong> do repositório. 
-                  Visite o repositório para conferir as próximas oportunidades!
+                <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
+                  A lista de workshops disponíveis está sempre atualizada no <strong className="text-primary">README da branch main</strong> do repositório. 
+                  Novos workshops são adicionados regularmente, então fique de olho! 👀
                 </p>
               </div>
             </div>
