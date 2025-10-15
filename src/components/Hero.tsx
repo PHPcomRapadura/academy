@@ -44,7 +44,7 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="text-2xl md:text-4xl font-bold text-foreground max-w-4xl mx-auto drop-shadow-lg leading-relaxed">
-            Workshops online gratuitos
+            Tudo na faixa
             <br className="hidden md:block" />
             <span className="bg-gradient-accent bg-clip-text text-transparent font-black drop-shadow-xl">
               {" "}
