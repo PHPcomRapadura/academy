@@ -29,12 +29,15 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden bg-background">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-      </div>
+    <section className="relative py-24 md:py-32 overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
+        style={{ backgroundImage: 'url(/bg-phpeste.jpg)' }}
+      ></div>
+      
+      {/* Optional overlay */}
+      <div className="absolute inset-0 bg-background/30"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
