@@ -1,8 +1,8 @@
-import { GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react";
+import { GraduationCap, GitBranch, GitPullRequest, CheckCircle2, Sparkles } from "lucide-react";
 
 const steps = [
   {
-    icon: GitBranch,
+    icon: GraduationCap,
     title: "Escolha seu Workshop",
     description:
       "Visite o repositório no GitHub e confira a lista de workshops disponíveis no README da branch main. Cada workshop tem sua própria branch com todos os detalhes.",
