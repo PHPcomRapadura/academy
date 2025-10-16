@@ -125,8 +125,8 @@ const WorkshopExamples = () => {
         {/* Bottom highlight */}
         <div className="text-center animate-fade-in" style={{ animationDelay: "0.6s" }}>
           <div className="inline-block relative group max-w-3xl">
-            <div className="absolute -inset-1 bg-gradient-nordeste rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-            <div className="relative backdrop-blur-xl p-8 md:p-10 rounded-3xl border-2 border-primary/40 shadow-hover">
+            <div className="absolute -inset-1 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
+            <div className="relative bg-gradient-nordeste backdrop-blur-xl p-8 md:p-10 rounded-3xl border-2 border-primary/40 shadow-hover">
               <p className="text-lg md:text-xl text-foreground leading-relaxed font-medium">
                 <strong className="text-primary text-2xl">Vários conteúdos sendo disponibilizados!</strong>
                 <br className="mb-2" />
