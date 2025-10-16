@@ -9,25 +9,23 @@ const Footer = () => {
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
               Rapadura Academy
             </h3>
-            <p className="text-muted-foreground">
-              Uma iniciativa da comunidade PHP com Rapadura
-            </p>
+            <p className="text-muted-foreground">Uma iniciativa da comunidade PHP com Rapadura</p>
           </div>
-          
+
           <div className="flex gap-4">
-            <a 
-              href="https://github.com/phpcomrapadura/academy" 
-              target="_blank" 
+            <a
+              href="https://github.com/phpcomrapadura/rapadura-academy"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-soft hover:shadow-hover"
             >
               <Github className="w-5 h-5" />
               <span className="font-medium">GitHub</span>
             </a>
-            
-            <a 
-              href="https://phpcomrapadura.org" 
-              target="_blank" 
+
+            <a
+              href="https://phpcomrapadura.org"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-muted hover:bg-accent hover:text-accent-foreground transition-all duration-300 shadow-soft hover:shadow-hover"
             >
@@ -36,7 +34,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-border text-center text-muted-foreground">
           <p>Feito com ❤️ pela comunidade PHP com Rapadura</p>
         </div>
