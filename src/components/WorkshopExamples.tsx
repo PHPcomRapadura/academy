@@ -34,7 +34,7 @@ const workshopCategories = [
     title: "Produção de Conteúdo",
     description: "Aprenda a criar e compartilhar conhecimento técnico",
     color: "from-accent via-primary to-secondary",
-    examples: ["Blogs técnicos", "Screencasts", "Documentação"]
+    examples: ["Palestras", "Documentação", "Blogs técnicos"]
   },
   {
     icon: Cpu,
