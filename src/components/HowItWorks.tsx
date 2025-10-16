@@ -63,15 +63,13 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
-        style={{ backgroundImage: "url(/bg-phpeste.jpg)" }}
-      ></div>
+    <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
 
-      {/* Optional overlay */}
-      <div className="absolute inset-0 bg-background/30"></div>
+      {/* Decorative background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+        <div className="absolute top-1/4 left-0 w-full h-96 bg-gradient-to-r from-primary/30 via-transparent to-accent/30 blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-full h-96 bg-gradient-to-l from-secondary/30 via-transparent to-primary/30 blur-3xl"></div>
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
