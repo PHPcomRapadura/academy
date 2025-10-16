@@ -127,7 +127,7 @@ const WorkshopExamples = () => {
           <div className="inline-block relative group max-w-3xl">
             <div className="absolute -inset-1 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
             <div className="relative bg-gradient-nordeste backdrop-blur-xl p-8 md:p-10 rounded-3xl border-2 border-primary/40 shadow-hover">
-              <p className="text-lg md:text-xl text-foreground leading-relaxed font-medium">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-medium">
                 <strong className="text-primary text-2xl">Vários conteúdos sendo disponibilizados!</strong>
                 <br className="mb-2" />
                 Cada workshop é uma branch diferente. Confira a lista completa no README do repositório principal.
