@@ -1,14 +1,12 @@
 import { Users, Heart, Lightbulb, Zap } from "lucide-react";
-
 const About = () => {
-  return (
-    <section className="relative py-24 overflow-hidden">
+  return <section className="relative py-24 overflow-hidden">
       {/* Gradient background with pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-muted/50 via-background to-muted/50"></div>
       <div className="absolute inset-0 opacity-20" style={{
-        backgroundImage: 'radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)',
-        backgroundSize: '40px 40px'
-      }}></div>
+      backgroundImage: 'radial-gradient(circle at 2px 2px, hsl(var(--primary)) 1px, transparent 0)',
+      backgroundSize: '40px 40px'
+    }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -70,7 +68,7 @@ const About = () => {
           <div className="relative animate-fade-in">
             <div className="absolute inset-0 bg-gradient-hero rounded-3xl blur-xl opacity-20"></div>
             <div className="relative bg-card/90 backdrop-blur-sm p-10 md:p-12 rounded-3xl shadow-glow border-2 border-primary/30">
-              <h3 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-sunset bg-clip-text text-transparent">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-sunset bg-clip-text text-amber-700">
                 Rapadura Conference 🎉
               </h3>
               <p className="text-lg text-foreground leading-relaxed mb-6">
@@ -83,8 +81,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
