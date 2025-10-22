@@ -131,7 +131,7 @@ const WorkshopExamples = () => {
                 <strong className="text-primary text-2xl">Vários conteúdos sendo disponibilizados!</strong>
                 <br className="mb-2" />
                 Cada workshop é uma branch diferente. Confira a lista completa no{" "}
-                <a href="https://github.com/PHPcomRapadura/rapadura-academy/blob/main/README.md" target="_blank">
+                <a href="https://github.com/PHPcomRapadura/academy/blob/main/README.md" target="_blank">
                   README.md
                 </a>{" "}
                 do repositório principal.

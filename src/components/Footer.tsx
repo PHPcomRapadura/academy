@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="flex gap-4">
             <a
-              href="https://github.com/phpcomrapadura/rapadura-academy"
+              href="https://github.com/phpcomrapadura/academy"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-soft hover:shadow-hover"
