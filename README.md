@@ -17,7 +17,7 @@ Uma iniciativa da [PHP com Rapadura](https://phpcomrapadura.org) para compartilh
 
 ## 📚 Sobre o Projeto
 
-O **Rapadura Academy** é uma plataforma de workshops online da comunidade PHP com Rapadura. Nosso objetivo é democratizar o conhecimento técnico através de workshops práticos e interativos, cobrindo uma ampla variedade de temas para todos os níveis.
+O **Rapadura Academy** é uma iniciativa da comunidade PHP com Rapadura de trazer workshops online. Nosso objetivo é democratizar o conhecimento técnico através de workshops práticos e interativos, cobrindo uma ampla variedade de temas para todos os níveis.
 
 ### 🎯 O que torna o Rapadura Academy especial?
 
