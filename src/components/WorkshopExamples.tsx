@@ -51,7 +51,7 @@ const WorkshopExamples = () => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
-        style={{ backgroundImage: "url(/bg-phpeste.jpg)" }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg-phpeste.jpg)` }}
       ></div>
 
       {/* Optional overlay */}

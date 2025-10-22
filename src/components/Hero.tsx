@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/bg-phpeste.jpg)" }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg-phpeste.jpg)` }}
       ></div>
 
       {/* Overlay for better text readability */}
