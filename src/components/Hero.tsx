@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import PhpComRaparura from "/php-com-rapadura.webp";
 import { Github, BookOpen, Code2, Sparkles } from "lucide-react";
 
 const Hero = () => {
@@ -16,9 +17,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto text-center space-y-10 animate-fade-in">
           {/* Logo Badge */}
-          <div className="inline-flex items-center gap-3 bg-background/40 backdrop-blur-md px-8 py-4 rounded-full shadow-glow border-2 border-primary/40 hover:border-primary/60 transition-all">
-            <Code2 className="w-6 h-6 text-primary animate-pulse" />
-            <span className="text-base font-bold text-foreground">PHP com Rapadura</span>
+          <div className="inline-flex items-center gap-3 bg-white backdrop-blur-md px-8 py-4 rounded-full shadow-glow border-2 border-primary/40 hover:border-primary/60 transition-all">
+            <img src={PhpComRaparura} alt="Logo PHP com Rapadura" className="w-auto object-contain" />
           </div>
 
           {/* Main heading */}
