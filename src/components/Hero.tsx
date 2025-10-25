@@ -17,8 +17,8 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto text-center space-y-10 animate-fade-in">
           {/* Logo Badge */}
-          <div className="inline-flex items-center gap-3 bg-white backdrop-blur-md px-8 py-4 rounded-full shadow-glow border-2 border-primary/40 hover:border-primary/60 transition-all">
-            <img src={PhpComRaparura} alt="Logo PHP com Rapadura" className="w-auto object-contain" />
+          <div className="inline-flex items-center gap-3 bg-white backdrop-blur-md px-4 py-2 rounded-full shadow-glow border-2 border-primary/40 hover:border-primary/60 transition-all">
+            <img src={PhpComRaparura} alt="Logo PHP com Rapadura" className="w-auto object-contain h-[40px]" />
           </div>
 
           {/* Main heading */}
